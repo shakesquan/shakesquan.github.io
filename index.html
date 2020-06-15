@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/asset/img/head.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Shakes Quan</a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/asset/img/head.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Shakes Quan</h1>
@@ -152,6 +152,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Spring框架之IOC（控制反转）容器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/15/Spring%E6%A1%86%E6%9E%B6%E4%B9%8BIOC%EF%BC%88%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC%EF%BC%89%E5%AE%B9%E5%99%A8/">Spring框架之IOC（控制反转）容器</a>
+    </h1>
+  
+
+        
+        <a href="/2020/06/15/Spring%E6%A1%86%E6%9E%B6%E4%B9%8BIOC%EF%BC%88%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC%EF%BC%89%E5%AE%B9%E5%99%A8/" class="archive-article-date">
+  	<time datetime="2020-06-15T14:29:47.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、IOC控制反转的概念"><a href="#一、IOC控制反转的概念" class="headerlink" title="一、IOC控制反转的概念"></a>一、IOC控制反转的概念</h2><p>一个Java程序是由很多类组成的，这些类相互协作、相互作用来提供应用程序的表现行为。那些被其它类组合提供某些行为的类，称之为其它类的依赖（dependencies）。利用软件工程中的组合模式（经常是继承模式的反模式）来说，我们经常利用某些类组合成其它类，不管这些类是通过构造函数还是setter方法或其它方法，那么组合成其它类的那些类就是这个组合类的依赖。当组合类要表现出的行为依赖这些类的时候，这些类必须被创建并注入给组合类。</p>
+<p>在spring应用中，spring ioc 容器就负责上述功能：创建类并注入它们的依赖。那些被spring容器创建并管理的类称只为bean。将对象的创建与管理交给Spring容器，就叫控制反转。Spring容器将根据配置文件的信息，管理整个bean对象的生命周期（由生到死）</p>
+        
+          <a class="article-more-a" href="/2020/06/15/Spring%E6%A1%86%E6%9E%B6%E4%B9%8BIOC%EF%BC%88%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC%EF%BC%89%E5%AE%B9%E5%99%A8/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Spring框架初体验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -197,10 +259,6 @@
 
       
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/07/Spring%E6%A1%86%E6%9E%B6%E5%88%9D%E4%BD%93%E9%AA%8C/">展开全文 >></a>
-        </p>
       
 
       
@@ -274,10 +332,6 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/07/Mybatis%E6%A0%B8%E5%BF%83%E6%8E%A5%E5%8F%A3%E5%92%8C%E7%B1%BB/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
@@ -350,10 +404,6 @@
 
       
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/07/Mybatis%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">展开全文 >></a>
-        </p>
       
 
       
@@ -429,10 +479,6 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/07/Mybatis%E5%88%9D%E4%BD%93%E9%AA%8C/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
@@ -503,10 +549,6 @@
       
       
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/03/hello-world/">展开全文 >></a>
-        </p>
       
 
       
