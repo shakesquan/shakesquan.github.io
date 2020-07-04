@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Mybatis初体验 | shakesquan&#39;s blog</title>
+  <title>正则表达式 | shakesquan&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、框架介绍​        Mybatis框架类似于盖房子的骨架，在已经搭建好的骨架中填充血肉。可以提高开发的效率，使开发更加的简介高效，让程序员更专注于业务逻辑，而不需要过多的关注代码的结构问题。 二、Mybatis简介​        Mybatis是一款优秀的持久层框架，它支持自定义SQL，存储过程以及高级映射。Mybatis免除了几乎所有的jdbc代码以及设置参数和获取结果集的工作。并且">
+  <meta name="description" content="一、什么是正则表达式正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就好比用模具，正则就是这个模具，定义一种规则去匹配符合规则的字符">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis初体验">
-<meta property="og:url" content="http://yoursite.com/2020/06/07/Mybatis%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="http://yoursite.com/2020/06/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="shakesquan&#39;s blog">
-<meta property="og:description" content="一、框架介绍​        Mybatis框架类似于盖房子的骨架，在已经搭建好的骨架中填充血肉。可以提高开发的效率，使开发更加的简介高效，让程序员更专注于业务逻辑，而不需要过多的关注代码的结构问题。 二、Mybatis简介​        Mybatis是一款优秀的持久层框架，它支持自定义SQL，存储过程以及高级映射。Mybatis免除了几乎所有的jdbc代码以及设置参数和获取结果集的工作。并且">
+<meta property="og:description" content="一、什么是正则表达式正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就好比用模具，正则就是这个模具，定义一种规则去匹配符合规则的字符">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-07T08:39:48.919Z">
-<meta property="article:modified_time" content="2020-07-04T13:48:59.815Z">
+<meta property="article:published_time" content="2020-06-18T09:03:55.964Z">
+<meta property="article:modified_time" content="2020-07-04T13:54:22.568Z">
 <meta property="article:author" content="Shakes Quan">
 <meta property="article:tag" content="学习笔记">
-<meta property="article:tag" content="Mybatis">
+<meta property="article:tag" content="正则表达式">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="shakesquan&#39;s blog" type="application/atom+xml">
@@ -156,59 +156,250 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Mybatis初体验" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-正则表达式" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Mybatis初体验
+      正则表达式
     </h1>
   
 
         
-        <a href="/2020/06/07/Mybatis%E5%88%9D%E4%BD%93%E9%AA%8C/" class="archive-article-date">
-  	<time datetime="2020-06-07T08:39:48.919Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-07</time>
+        <a href="/2020/06/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2020-06-18T09:03:55.964Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、框架介绍"><a href="#一、框架介绍" class="headerlink" title="一、框架介绍"></a>一、框架介绍</h2><p>​        Mybatis框架类似于盖房子的骨架，在已经搭建好的骨架中填充血肉。可以提高开发的效率，使开发更加的简介高效，让程序员更专注于业务逻辑，而不需要过多的关注代码的结构问题。</p>
-<h2 id="二、Mybatis简介"><a href="#二、Mybatis简介" class="headerlink" title="二、Mybatis简介"></a>二、Mybatis简介</h2><p>​        Mybatis是一款优秀的持久层框架，它支持自定义SQL，存储过程以及高级映射。Mybatis免除了几乎所有的jdbc代码以及设置参数和获取结果集的工作。并且它可以通过简单的XML或注解来配置和映射原始类型、接口和Java POJO（Plain Old Java Object，普通老式Java对象）为数据库中的记录。</p>
-<p>​        Mybatis就是一个访问数据库的ORM（Object Reflect Model）框架</p>
+        <h2 id="一、什么是正则表达式"><a href="#一、什么是正则表达式" class="headerlink" title="一、什么是正则表达式"></a>一、什么是正则表达式</h2><p>正则表达式是一种特殊的字符串模式，用于匹配一组字符串，就好比用模具，正则就是这个模具，定义一种规则去匹配符合规则的字符</p>
 <a id="more"></a>
 
-<h2 id="三、Mybatis入门"><a href="#三、Mybatis入门" class="headerlink" title="三、Mybatis入门"></a>三、Mybatis入门</h2><h3 id="1、回顾jdbc访问数据库"><a href="#1、回顾jdbc访问数据库" class="headerlink" title="1、回顾jdbc访问数据库"></a>1、回顾jdbc访问数据库</h3><h4 id="1）添加MySQL驱动"><a href="#1）添加MySQL驱动" class="headerlink" title="1）添加MySQL驱动"></a>1）添加MySQL驱动</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;5.1.48&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2）加载驱动"><a href="#2）加载驱动" class="headerlink" title="2）加载驱动"></a>2）加载驱动</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>)</span><br></pre></td></tr></table></figure>
-
-<h4 id="3）连接数据库"><a href="#3）连接数据库" class="headerlink" title="3）连接数据库"></a>3）连接数据库</h4><p>​        数据库的连接字符串，验证用户名和密码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection conn = DriverManager.getConnection(<span class="string">"jdbc:mysql://localhost:3306/mysqldb?useUnicode=true&amp;charactorEncoding=uft-8&amp;autoReconnect=true"</span>,<span class="string">"root"</span>,<span class="string">"root123"</span>);</span><br></pre></td></tr></table></figure>
-
-<h4 id="4）通过数据库连接对象connection来操作数据库"><a href="#4）通过数据库连接对象connection来操作数据库" class="headerlink" title="4）通过数据库连接对象connection来操作数据库"></a>4）通过数据库连接对象connection来操作数据库</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//增</span></span><br><span class="line">PreparedStatement ps = conn.prepareStatement(<span class="string">"insert into user(name,pwd) values(?,?)"</span>);</span><br><span class="line">ps.setString(<span class="number">1</span>, <span class="string">"张三"</span>);</span><br><span class="line">ps.setString(<span class="number">2</span>, <span class="string">"333333"</span>);</span><br><span class="line">ps.executeUpdate();</span><br><span class="line"></span><br><span class="line"><span class="comment">//删</span></span><br><span class="line">PreparedStatement ps = conn.prepareStatement(<span class="string">"delete from user where id = ?"</span>);</span><br><span class="line">ps.setInt(<span class="number">1</span>, <span class="number">38</span>);</span><br><span class="line">ps.executeUpdate();</span><br><span class="line"></span><br><span class="line"><span class="comment">//改</span></span><br><span class="line">PreparedStatement ps = conn.prepareStatement(<span class="string">"update user set name = ? where id = ?"</span>);</span><br><span class="line">ps.setString(<span class="number">1</span>, <span class="string">"张三"</span>);</span><br><span class="line">ps.setInt(<span class="number">2</span>, <span class="number">28</span>);</span><br><span class="line">ps.executeUpdate();</span><br><span class="line"></span><br><span class="line"><span class="comment">//查</span></span><br><span class="line">PreparedStatement ps = conn.prepareStatement(<span class="string">"select * from user"</span>);</span><br><span class="line">ResultSet rs = ps.executeQuery();</span><br><span class="line">List&lt;User&gt; users = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"><span class="keyword">while</span>(rs.next()) &#123;</span><br><span class="line">    User user = <span class="keyword">new</span> User();</span><br><span class="line">    user.setId(rs.getInt(<span class="string">"id"</span>));</span><br><span class="line">    user.setName(rs.getString(<span class="string">"name"</span>));</span><br><span class="line">    user.setPwd(rs.getString(<span class="string">"pwd"</span>));</span><br><span class="line">    user.setAcount(rs.getDouble(<span class="string">"acount"</span>));</span><br><span class="line">    users.add(user);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5）关闭释放资源"><a href="#5）关闭释放资源" class="headerlink" title="5）关闭释放资源"></a>5）关闭释放资源</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps.close();</span><br><span class="line">conn.close();</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、Mybatis入门程序"><a href="#2、Mybatis入门程序" class="headerlink" title="2、Mybatis入门程序"></a>2、Mybatis入门程序</h3><p>和以往常规的jdbc方式相比较，Mybatis框架省略了几乎所有jdbc配置的代码，以及获取结果集的操作。加载上mybatis依赖后，通过XML文件配置好数据源环境以及mapper映射文件的路径后，通过mapper映射文件来对数据库中的数据进行操作，将SQL语句从代码中摘出来，用mapper映射文件来统一写SQL语句，条理更加清晰。</p>
-<h4 id="1）添加Mybatis依赖"><a href="#1）添加Mybatis依赖" class="headerlink" title="1）添加Mybatis依赖"></a>1）添加Mybatis依赖</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.5.4&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2）创建Mybatis的全局配置文件"><a href="#2）创建Mybatis的全局配置文件" class="headerlink" title="2）创建Mybatis的全局配置文件"></a>2）创建Mybatis的全局配置文件</h4><p>​        在resource目录下创建文件SqlMapConfig.xml</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE configuration PUBLIC <span class="string">"-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line"><span class="string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>&gt;</span><br><span class="line">    &lt;configuration&gt;</span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">		&lt;property name=<span class="string">"jdbc.driver"</span> value=<span class="string">"com.mysql.jdbc.Driver"</span>/&gt;</span><br><span class="line">		&lt;property name=<span class="string">"jdbc.url"</span> value=<span class="string">"jdbc:mysql://localhost:3306/homework01?userUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true"</span>/&gt;</span><br><span class="line">		&lt;property name=<span class="string">"jdbc.username"</span> value=<span class="string">"root"</span>/&gt;</span><br><span class="line">		&lt;property name=<span class="string">"jdbc.pwd"</span> value=<span class="string">"root123"</span>/&gt;</span><br><span class="line">	&lt;/properties&gt;</span><br><span class="line">    &lt;!--数据源环境配置  --&gt;</span><br><span class="line">    &lt;environments <span class="keyword">default</span>=<span class="string">"development"</span>&gt; </span><br><span class="line">    	&lt;environment id=<span class="string">"development"</span>&gt; </span><br><span class="line">    	&lt;transactionManager type=<span class="string">"JDBC"</span>/&gt; </span><br><span class="line">    	&lt;dataSource type=<span class="string">"POOLED"</span>&gt; </span><br><span class="line">    		&lt;property name=<span class="string">"driver"</span> value=<span class="string">"$&#123;jdbc.driver&#125;"</span>/&gt;</span><br><span class="line">        	&lt;property name=<span class="string">"url"</span> value=<span class="string">"$&#123;jdbc.url&#125;"</span>/&gt;</span><br><span class="line">        	&lt;property name=<span class="string">"username"</span> value=<span class="string">"$&#123;jdbc.username&#125;"</span>/&gt;</span><br><span class="line">        	&lt;property name=<span class="string">"password"</span> value=<span class="string">"$&#123;jdbc.pwd&#125;"</span>/&gt;</span><br><span class="line">    	&lt;/dataSource&gt; </span><br><span class="line">    	&lt;/environment&gt; </span><br><span class="line">    &lt;/environments&gt;</span><br><span class="line">    &lt;!-- 配置mapper映射文件的路径 --&gt;</span><br><span class="line">    &lt;mappers&gt;</span><br><span class="line">   		&lt;mapper resource=<span class="string">"com/neu/mapper/UserMapper.xml"</span>/&gt;</span><br><span class="line">    &lt;/mappers&gt; </span><br><span class="line">    &lt;/configuration&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3）创建Mybatis的mapper映射文件"><a href="#3）创建Mybatis的mapper映射文件" class="headerlink" title="3）创建Mybatis的mapper映射文件"></a>3）创建Mybatis的mapper映射文件</h4><p>​        在src/main/java下建立一个包com.neu.mapper专门用于存储mapper映射文件，创建UserMapper.xml，代码如下：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">  PUBLIC <span class="string">"-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line">  <span class="string">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"</span>&gt;</span><br><span class="line">&lt;mapper namespace=<span class="string">"com.neu.model.UserDao"</span>&gt;</span><br><span class="line">	&lt;insert id=<span class="string">"insertUser"</span>&gt;</span><br><span class="line">		<span class="function">insert into <span class="title">user</span><span class="params">(name,pwd)</span> <span class="title">values</span><span class="params">(#&#123;name&#125;,#&#123;pwd&#125;)</span></span></span><br><span class="line"><span class="function">	&lt;/insert&gt;</span></span><br><span class="line"><span class="function">	&lt;delete id</span>=<span class="string">"deleteUser"</span>&gt;</span><br><span class="line">		delete from user where id = #&#123;id&#125;</span><br><span class="line">	&lt;/delete&gt;</span><br><span class="line">	&lt;update id=<span class="string">"updateUser"</span>&gt;</span><br><span class="line">		update user set name = #&#123;name&#125; where id = #&#123;id&#125;</span><br><span class="line">	&lt;/update&gt;</span><br><span class="line">	&lt;select id=<span class="string">"selUser"</span> resultType=<span class="string">"com.neu.bean.User"</span>&gt;</span><br><span class="line">		select * from user where id = #&#123;id&#125;</span><br><span class="line">	&lt;/select&gt;</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
-
-<p>​        这里的每个标签如<insert>、<delete>表示数据库相应的操作，特别要注意的是，==<mapper>标签里的namespace属性的值，和Dao层接口的全包名一样的话，则不需要写接口的实现类，Mybatis会自动绑定接口，完成SQL语句对数据库的操作。==每一个标签里的id与Dao层接口的方法名一致。</mapper></delete></insert></p>
-<h4 id="4）在bean包里新建一个User类，属性与数据库里的User表中各字段对应"><a href="#4）在bean包里新建一个User类，属性与数据库里的User表中各字段对应" class="headerlink" title="4）在bean包里新建一个User类，属性与数据库里的User表中各字段对应"></a>4）在bean包里新建一个User类，属性与数据库里的User表中各字段对应</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> Integer id;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="keyword">private</span> String pwd;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Integer <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> name;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getPwd</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> pwd;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPwd</span><span class="params">(String pwd)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.pwd = pwd;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"User [id="</span> + id + <span class="string">", name="</span> + name + <span class="string">", pwd="</span> + pwd + <span class="string">"]"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5）创建Dao层的接口，UserDao"><a href="#5）创建Dao层的接口，UserDao" class="headerlink" title="5）创建Dao层的接口，UserDao"></a>5）创建Dao层的接口，UserDao</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">insertUser</span><span class="params">(User user)</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">deleteUser</span><span class="params">(<span class="keyword">int</span> id)</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">updateUser</span><span class="params">(User user)</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> User <span class="title">selUser</span><span class="params">(<span class="keyword">int</span> id)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="6）创建测试类，测试功能能否实现"><a href="#6）创建测试类，测试功能能否实现" class="headerlink" title="6）创建测试类，测试功能能否实现"></a>6）创建测试类，测试功能能否实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">//创建输入流，将xml配置文件以输入流的方式加载进来</span></span><br><span class="line">		InputStream is = Resources.getResourceAsStream(<span class="string">"SqlMapConfig.xml"</span>);</span><br><span class="line">		SqlSessionFactory sf = <span class="keyword">new</span> SqlSessionFactoryBuilder().build(is);</span><br><span class="line">		SqlSession ss = sf.openSession();</span><br><span class="line">		UserDao ud = ss.getMapper(UserDao<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//增</span></span><br><span class="line">		User user = <span class="keyword">new</span> User();</span><br><span class="line">		user.setName(<span class="string">"li"</span>);</span><br><span class="line">		user.setPwd(<span class="string">"123"</span>);</span><br><span class="line">		ud.insertUser(user);</span><br><span class="line">		ss.commit();</span><br><span class="line">		ss.close();</span><br><span class="line">		System.out.println(<span class="string">"数据插入成功"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//删</span></span><br><span class="line">		ud.deleteUser(<span class="number">1</span>);</span><br><span class="line">		ss.commit();</span><br><span class="line">		ss.close();</span><br><span class="line">		System.out.println(<span class="string">"数据删除成功"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//改</span></span><br><span class="line">		User user = <span class="keyword">new</span> User();</span><br><span class="line">		user.setId(<span class="number">2</span>);</span><br><span class="line">		user.setName(<span class="string">"xia"</span>);</span><br><span class="line">		user.setPwd(<span class="string">"123"</span>);</span><br><span class="line">		ud.updateUser(user);</span><br><span class="line">		ss.commit();</span><br><span class="line">		ss.close();</span><br><span class="line">		System.out.println(<span class="string">"数据修改成功"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//查</span></span><br><span class="line">		User user = ud.selUser(<span class="number">2</span>);</span><br><span class="line">		System.out.println(user);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
+<h2 id="二、特殊字符"><a href="#二、特殊字符" class="headerlink" title="二、特殊字符"></a>二、特殊字符</h2><p>若要匹配特殊字符，必须首先转义字符，即在字符前面加反斜杠字符（\）。例如，要搜索”+”文本字符，可以使用表达式”+“</p>
+<table>
+<thead>
+<tr>
+<th align="center">元 字符</th>
+<th align="center">行为</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">*</td>
+<td align="center">零次或多次匹配前面的字符或子表达式。等效于{0,}。</td>
+<td align="center">zo*与“z”和”zoo“匹配</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center">一次或多次匹配前面的字符或字表达式。等效于{1,}。</td>
+<td align="center">zo+与“zo”和“zoo”匹配，但与“z”不匹配</td>
+</tr>
+<tr>
+<td align="center">？</td>
+<td align="center">零次或一次匹配前面的字符或子表达式。等效于{0,1}。当？紧随任何其他限定符（*、+、？、{n}、{n,}或{n,m}）之后时，匹配模式是非贪婪的。非贪婪模式匹配搜索到的尽可能少的字符串，而默认的贪婪模式匹配搜索到的尽可能多的字符串。</td>
+<td align="center">zo?与“z”和“zo”匹配，但与“zoo”不匹配。</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">匹配搜索字符串开始的位置。如果标志中包括m（多行搜索）字符，^还将匹配\n 或 \r 后面的位置。如果将 ^ 用作括号表达式中的第一个字符，则会对字符集求反。</td>
+<td align="center">^\d{3} 与搜索字符串开始处的 3 个数字匹配。</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="center">匹配搜索字符串结尾的位置。 如果标志中包括 m（多行搜索）字符，^ 还将匹配 \n 或 \r 前面的位置。</td>
+<td align="center">\d{3}$ 与搜索字符串结尾处的 3 个数字匹配。</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="center">匹配除换行符 \n 之外的任何单个字符。 若要匹配包括 \n 在内的任意字符，请使用诸如 [\s\S] 之类的模式。</td>
+<td align="center">a.c 与“abc”、“a1c”和“a-c”匹配。</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="center">标记括号表达式的开始和结尾。</td>
+<td align="center">[1-4] 与“1”、“2”、“3”或“4”匹配。</td>
+</tr>
+<tr>
+<td align="center">{}</td>
+<td align="center">标记限定符表达式的开始和结尾。</td>
+<td align="center">a{2,3} 与“aa”和“aaa”匹配。</td>
+</tr>
+<tr>
+<td align="center">()</td>
+<td align="center">标记子表达式的开始和结尾。 可以保存子表达式以备将来之用。</td>
+<td align="center">A(\d) 与“A0”至“A9”匹配。 保存该数字以备将来之用。</td>
+</tr>
+<tr>
+<td align="center">|</td>
+<td align="center">指示在两个或多个项之间进行选择。</td>
+<td align="center">z|food与“z”或“food”匹配。（z|f）ood与“zood”或“food”匹配</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td align="center">表示JScript中的文本正则表达式模式的开始或结尾。在第二个“/”后添加单字符标志可以指定搜索行为。</td>
+<td align="center">/abc/gi 是与“abc”匹配的 JScript 文本正则表达式。 g（全局）标志指定查找模式的所有匹配项，i（忽略大小写）标志使搜索不区分大小写。</td>
+</tr>
+<tr>
+<td align="center">\</td>
+<td align="center">将下一字符标记为特殊字符、文本、反向引用或八进制转义符。</td>
+<td align="center">\n 与换行符匹配。 ( 与“(”匹配。 \ 与“\”匹配。</td>
+</tr>
+</tbody></table>
+<h2 id="三、元字符"><a href="#三、元字符" class="headerlink" title="三、元字符"></a>三、元字符</h2><p>下表包含了多字符元字符的列表以及它们在正则表达式中的行为。</p>
+<table>
+<thead>
+<tr>
+<th align="center">元字符</th>
+<th align="center">行为</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\b</td>
+<td align="center">与一个字边界匹配；即字与空格间的位置。</td>
+<td align="center">er\b 与“never”中的“er”匹配，但与“verb”中的“er”不匹配。</td>
+</tr>
+<tr>
+<td align="center">\B</td>
+<td align="center">非边界字匹配。</td>
+<td align="center">er\B 与“verb”中的“er”匹配，但与“never”中的“er”不匹配</td>
+</tr>
+<tr>
+<td align="center">\d</td>
+<td align="center">数字字符匹配。等效于 [0-9]。</td>
+<td align="center">在搜索字符串“12 345”中，\d{2} 与“12”和“34”匹配。 \d 与“1”、“2”、“3”、“4”和“5”匹配。</td>
+</tr>
+<tr>
+<td align="center">\D</td>
+<td align="center">非数字字符匹配。</td>
+<td align="center">\D+ 与“abc123 def”中的“abc”和“def”匹配。</td>
+</tr>
+<tr>
+<td align="center">\w</td>
+<td align="center">与以下任意字符匹配：A-Z、a-z、0-9 和下划线。等效于 [A-Za-z0-9_]。</td>
+<td align="center">在搜索字符串“The quick brown fox…”中，\w+ 与“The”、“quick”、“brown”和“fox”匹配</td>
+</tr>
+<tr>
+<td align="center">\W</td>
+<td align="center">与除 A-Z、a-z、0-9 和下划线以外的任意字符匹配。</td>
+<td align="center">在搜索字符串“The quick brown fox…”中，\W+ 与“…”和所有空格匹配。</td>
+</tr>
+<tr>
+<td align="center">[xyz]</td>
+<td align="center">字符集。 与任何一个指定字符匹配。</td>
+<td align="center">[abc] 与“plain”中的“a”匹配。</td>
+</tr>
+<tr>
+<td align="center">[^xyz]</td>
+<td align="center">反向字符集。 与未指定的任何字符匹配。</td>
+<td align="center">[^abc] 与“plain”中的“p”、“l”、“i”和“n”匹配。</td>
+</tr>
+<tr>
+<td align="center">[a-z]</td>
+<td align="center">字符范围。 匹配指定范围内的任何字符。</td>
+<td align="center">[a-z] 与“a”到“z”范围内的任何小写字母字符匹配。</td>
+</tr>
+<tr>
+<td align="center">[^a-z]</td>
+<td align="center">反向字符范围。 与不在指定范围内的任何字符匹配。</td>
+<td align="center">[^a-z] 与不在范围“a”到“z”内的任何字符匹配</td>
+</tr>
+<tr>
+<td align="center">{n}</td>
+<td align="center">正好匹配 n 次。 n 是非负整数。</td>
+<td align="center">o{2} 与“Bob”中的“o”不匹配，但与“food”中的两个“o”匹配</td>
+</tr>
+<tr>
+<td align="center">{n,}</td>
+<td align="center">至少匹配 n 次。 n 是非负整数。* 与 {0,} 相等。+ 与 {1,} 相等。</td>
+<td align="center">o{2,} 与“Bob”中的“o”不匹配，但与“foooood”中的所有“o”匹配。</td>
+</tr>
+<tr>
+<td align="center">{n,m}</td>
+<td align="center">匹配至少 n 次，至多 m 次。 n 和 m 是非负整数，其中 n &lt;= m。 逗号和数字之间不能有空格。? 与 {0,1} 相等。</td>
+<td align="center">在搜索字符串“1234567”中，\d{1,3} 与“123”、“456”和“7”匹配。</td>
+</tr>
+</tbody></table>
+<h2 id="四、非打印字符"><a href="#四、非打印字符" class="headerlink" title="四、非打印字符"></a>四、非打印字符</h2><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>匹配</th>
+<th>等效于</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\f</td>
+<td>换页符。</td>
+<td>\x0c 和 \cL</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符。</td>
+<td>\x0a 和 \cJ</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车符。</td>
+<td>\x0d 和 \cM</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>任何空白字符。 其中包括空格、制表符和换页符。</td>
+<td>[ \f\n\r\t\v]</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>任何非空白字符。</td>
+<td>[^ \f\n\r\t\v]</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>Tab 字符。</td>
+<td>\x09 和 \cI</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直制表符。</td>
+<td>\x0b 和 \cK</td>
+</tr>
+</tbody></table>
+<h2 id="五、优先级顺序"><a href="#五、优先级顺序" class="headerlink" title="五、优先级顺序"></a>五、优先级顺序</h2><p>正则表达式的计算方式与算数表达式非常类似，即从左到右进行计算，并遵循优先级顺序。下表按从高到低的顺序包含了正则表达式运算符的优先级顺序。</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\</td>
+<td>转义符</td>
+</tr>
+<tr>
+<td>(), (?:), (?=), []</td>
+<td>括号和中括号</td>
+</tr>
+<tr>
+<td>*、+、?、{n}、{n,}、{n,m}</td>
+<td>限定符</td>
+</tr>
+<tr>
+<td>^、$、\任何元字符</td>
+<td>定位点和序列</td>
+</tr>
+<tr>
+<td>|</td>
+<td>替换</td>
+</tr>
+</tbody></table>
+<h2 id="六、Java中是如何支持正则表达式操作的"><a href="#六、Java中是如何支持正则表达式操作的" class="headerlink" title="六、Java中是如何支持正则表达式操作的"></a>六、Java中是如何支持正则表达式操作的</h2><p>Java中的String类提供了支持正则表达式操作的方法，包括：matches()、replaceAll()、replaceFirst()、split()。此外，Java中可以用Pattern类表示正则表达式对象，它提供了丰富的API进行各种正则表达式操作。</p>
+<p>如：要从字符串中截取第一个英文左括号之前的字符串，例如：成都市(成华区)(金牛区)(青羊区)，截取结果为：成都市。那么正则表达式怎么写？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.regex.Matcher;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RegExpTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String str = <span class="string">"成都市(成华区)(金牛区)(青羊区)"</span>;</span><br><span class="line">        Pattern p = Pattern.compile(<span class="string">".*?(?=\\()"</span>);</span><br><span class="line">        Matcher m = p.matcher(str);</span><br><span class="line">        <span class="keyword">if</span>(m.find()) &#123;</span><br><span class="line">            System.out.println(m.group());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -229,7 +420,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Mybatis</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">正则表达式</a>
         		</li>
       		
 		</ul>
@@ -285,7 +476,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/07/Mybatis%E5%88%9D%E4%BD%93%E9%AA%8C/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -299,18 +490,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/06/07/Mybatis%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/06/30/Linux%E5%AE%89%E8%A3%85/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Mybatis配置文件
+          Linux安装
         
       </div>
     </a>
   
   
-    <a href="/2020/06/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/06/15/Spring%E6%A1%86%E6%9E%B6%E4%B9%8BIOC%EF%BC%88%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC%EF%BC%89%E5%AE%B9%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring框架之IOC（控制反转）容器</div>
       <i class="icon-circle-right"></i>
     </a>
   
